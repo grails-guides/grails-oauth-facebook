@@ -1,0 +1,41 @@
+To get Facebook OAuth2 up and running on your application will take a bit of work and configuration on
+https://developers.facebook.com[Facebook's Developer Platform]. Go ahead and sign in (if you haven't signed up yet, signup).
+
+image::fbDevHome.png[]
+
+Select `Create App` and five your Facebook project a name. In this case we name it `OAuth-Test`
+
+image::fbCreateNewApp.png[]
+
+Wait a moment while Facebook creates your new project, once it is done it will redirect you to your apps dashboard.
+
+image::fbNewAppHome.png[]
+
+We want to login using Facebook so click `Set Up` on the Facebook Login option. This will bring us to the `Quickstart` page,
+select `Other`
+
+image::fbLoginSetup.png[]
+
+Why did we choose other and not web? Web is specifically for javascript applications such as Facebook's native React or
+Google's Angular. Other is geared toward OAuth2 authentication taking place server-side, like in our case how we are
+performing OAuth2 authentication using a plugin in Grails. To read more about it follow the link provided by Facebook
+under "Manually Build a Login Flow".
+
+image::fbLoginSetupOther.png[]
+
+At this point we need to take a look at our `Facebook Login -> Settings`
+
+image::fbLoginSetupSettings.png[]
+
+In order for our app to be able to talk back to Facebook we need to authorize it under `ValidOAuth redirect URIs`. Go
+ahead and enter `http://localhost:8080/oauth/authenticate/facebook` so that Facebook knows its ok to talk to our plugin.
+
+image::fbLoginSetupSettingsRedirect.png[]
+
+Now we need to find our app credentials. On the left under `Dashboard` click `Settings -> Basic` to view your `App ID`
+and `App Secret`.
+
+image::fbAppIdAndSecret.png[]
+
+This is all the setup that needs to be done in Facebook. Write down your `App ID` and `App Secret` we will need it when
+ configuring the application. Now we will move on to setting up our app.

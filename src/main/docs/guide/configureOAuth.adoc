@@ -27,7 +27,7 @@ At this point we need to take a look at our `Facebook Login -> Settings`
 
 image::fbLoginSetupSettings.png[]
 
-In order for our app to be able to talk back to Facebook we need to authorize it under `ValidOAuth redirect URIs`. Go
+TODO: (THIS WILL PROBABLY NEED UPDATED) In order for our app to be able to talk back to Facebook we need to authorize it under `ValidOAuth redirect URIs`. Go
 ahead and enter `http://localhost:8080/oauth/authenticate/facebook` so that Facebook knows its ok to talk to our plugin.
 
 image::fbLoginSetupSettingsRedirect.png[]

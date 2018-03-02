@@ -18,10 +18,10 @@ To launch the application, run the following command.
 $ ./gradlew bootRun
 ----
 
-image::initialStartup.png[]
+image::defaultGradleBootrunWhite.png[]
 
 Navigate to http://localhost:8080 to see that the default application works.
 
-image::initialApp.png[]
+image::defaultAppRunGrayYellow.png[]
 
 Now that we have checked the app start, go ahead and shut them down with `Ctrl-C`.

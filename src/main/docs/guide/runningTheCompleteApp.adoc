@@ -1,4 +1,4 @@
-As previously in the <<runningTheApp>> section go ahead and
+Run the app with Gradle `bootRun` task.
 
 [source,bash]
 ----
@@ -15,11 +15,11 @@ image::unauthorizedShow.png[]
 
 Click `Login with Google` from our menu and select your account / signin
 
-image::googleSignin.png[]
+image::fbSigninApprove.png[]
 
 See our successful login message
 
-image::loginMessage.png[]
+image::REPLACEME.png[]
 
 Select a book and see that the `Favourite` button is now available.
 
@@ -27,4 +27,4 @@ image::authorizedShow.png[]
 
 Click on logout and you will see our logout message displayed.
 
-image::logoutMessage.png[]
+image::REPLACEME.png[]

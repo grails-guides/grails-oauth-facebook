@@ -36,7 +36,7 @@
         </div>
     </div>
 
-    <div class="centered">
+    <div class="centered" style="margin: 10px auto;">
         <g:link controller="book" action="index">
             <g:message code="book.all" default="All"/>
         </g:link>
@@ -46,10 +46,12 @@
         </g:link>
         <span>|</span>
         <sec:ifNotLoggedIn>
-            <a href="/oauth/authenticate/google">Login with Google</a>
+            <a href="/oauth/authenticate/facebook">${g.message(code: "login.facebook", default:"Login with Facebook")}</a>
         </sec:ifNotLoggedIn>
         <sec:ifLoggedIn>
-            <a href="/logout">Logout</a>
+            <g:form controller="logout" style="display: inline;">
+                <input type="submit" value="${g.message(code: "logout", default:"Logout")}"/>
+            </g:form>
         </sec:ifLoggedIn>
     </div>
 

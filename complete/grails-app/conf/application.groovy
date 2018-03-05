@@ -37,7 +37,7 @@ grails {
 						secret = '46c35c3ee9f92751ceb796764ae585a1' //<4>
 						scope = 'email' //<5>
 						fields = 'id,name,first_name,middle_name,last_name,username'
-						defaultRoles = ['ROLE_USER', 'ROLE_FACEBOOK'] //<6>
+						defaultRoles = [] //<6>
 					}
 				}
 			}

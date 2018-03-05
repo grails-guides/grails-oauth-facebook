@@ -46,7 +46,7 @@
         </g:link>
         <span>|</span>
         <sec:ifNotLoggedIn>
-            <a href="/oauth/authenticate/facebook">${g.message(code: "login.facebook", default:"Login with Facebook")}</a>
+            <g:render template="/login/loginWithFacebook"/>
         </sec:ifNotLoggedIn>
         <sec:ifLoggedIn>
             <g:form controller="logout" style="display: inline;">

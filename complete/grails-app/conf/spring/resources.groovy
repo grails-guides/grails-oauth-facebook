@@ -1,5 +1,5 @@
-import demo.UserPasswordEncoderListener
+import demo.CustomOauthUserDetailsService
 // Place your Spring DSL code here
 beans = {
-    userPasswordEncoderListener(UserPasswordEncoderListener)
+    oauthUserDetailsService(CustomOauthUserDetailsService)
 }

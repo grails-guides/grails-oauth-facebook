@@ -29,6 +29,13 @@ grails {
 	plugin {
 		springsecurity {
 			rest {
+				token {
+					storage {
+						jwt {
+							secret = 'foobar123'*4
+						}
+					}
+				}
 				oauth {
 					frontendCallbackUrl = { String tokenValue -> "http://localhost:8080/successfullyLoggedIn/index#token=${tokenValue}" } //<1>
 					facebook {
@@ -36,7 +43,7 @@ grails {
 						key = '160316474555507' //<3>
 						secret = '46c35c3ee9f92751ceb796764ae585a1' //<4>
 						scope = 'email' //<5>
-						fields = 'id,name,first_name,middle_name,last_name,username'
+						fields = 'id,name,first_name,middle_name,last_name'
 						defaultRoles = [] //<6>
 					}
 				}

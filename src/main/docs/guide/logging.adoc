@@ -1,4 +1,4 @@
-If you would like to enable enhanced logging so you can see what is returned when calling Googles OAuth api, add the
+If you would like to enable enhanced logging so you can see what is returned when calling Facebooks OAuth api, add the
 following to the end of your `logback.groovy` file
 
 [source,groovy]

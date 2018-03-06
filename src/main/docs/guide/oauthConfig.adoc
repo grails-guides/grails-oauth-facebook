@@ -10,7 +10,8 @@ include::{sourceDir}/grails-app/conf/application.groovy[indent=0, tag=oauthConfi
 <2> Which pac4j client to use; in our case the Facebook client
 <3> Your App ID
 <4> Your App Secret
-<5> TODO
-<6> Specific roles that Facebook authentication is allowed to access
+<5> Set of Facebook permissions. View Facebook documentation https://developers.facebook.com/docs/facebook-login/permissions[here]
+<6> Data fields that are returned to your app from Facebook
+<7> Specific roles that Facebook authentication is allowed to access
 
 Now that we have all our OAuth2 configuration in place lets go ahead and put the rest of our app together.

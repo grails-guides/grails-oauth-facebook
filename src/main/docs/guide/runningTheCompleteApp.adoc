@@ -13,18 +13,17 @@ Select a book and see that no `Favourite` button is available when not signed in
 
 image::unauthorizedShow.png[]
 
-Click `Login with Google` from our menu and select your account / signin
+Click `Log in with Facebook` from our menu and select your account / signin
+
+NOTE: You will only be asked to approve the app on your first login attempt unless you go in and remove the app from your facebook
+approved apps.
 
 image::fbSigninApprove.png[]
 
 See our successful login message
 
-image::REPLACEME.png[]
+image::loginMessage.png[]
 
 Select a book and see that the `Favourite` button is now available.
 
 image::authorizedShow.png[]
-
-Click on logout and you will see our logout message displayed.
-
-image::REPLACEME.png[]

@@ -14,7 +14,7 @@ class SuccessfullyLoggedInController {
     @Secured('isAuthenticated()')
     def index() {
         final oauthAttributes = springSecurityService?.principal?.userProfile?.attributes //<2>
-        flash.message = "${oauthAttributes?.displayName ?: 'You'} logged in successfully with a gmail address ${oauthAttributes?.emails?.email?.get(0) ?: 'N/A'}"
+        flash.message = "${oauthAttributes?.name ?: 'You'} logged in successfully on Facebook with email ${oauthAttributes?.email ?: 'N/A'}"
         redirect controller: 'book', action: 'index'
     }
 }

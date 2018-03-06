@@ -2,15 +2,12 @@ gettingStarted:
   title: Getting Started
   requirements: What you will need
   howto: How to complete the guide
-#runningTheApp:
-#  title: Running the Application
 oauth2:
   title: OAuth2 Authentication
   configureOAuth: Setup and Configure Facebook OAuth2
 appConfig:
   title: Setting up your app
   dependencies: Add Security Dependencies
-  security: Generate Basic Spring Security
   oauthConfig: OAuth2 Configuration.
   logging: Enhanced Logging
 buildingTheApp:

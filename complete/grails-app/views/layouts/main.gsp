@@ -36,6 +36,7 @@
         </div>
     </div>
 
+<!-- tag::menu[] -->
     <div class="centered" style="margin: 10px auto;">
         <g:link controller="book" action="index">
             <g:message code="book.all" default="All"/>
@@ -58,6 +59,7 @@
     <g:if test="${flash.message}">
         <div class="message" style="display: block">${flash.message}</div>
     </g:if>
+<!-- end::menu[] -->
 
     <g:layoutBody/>
 
